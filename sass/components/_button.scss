@@ -1,0 +1,43 @@
+.site-btn {
+    &:hover{
+        background:#1ecf8e;
+    }
+    &:active{
+        background: #2AB6D9;
+    }
+    padding: 0.4rem 2.3rem;
+    background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+    border-radius: 2.2rem;
+    color: $white-color;
+    font-weight: $font-weight;
+    font-size: $text-normal-size;
+    line-height: $text-normal-line;
+    }
+    
+.header-btn{
+    // display: block;
+    // margin-left: auto;
+    @include responsive (tablet){
+        display: none;
+    }
+}
+
+.togler-btn {
+    display: none;
+    border: none;
+    @include responsive (tablet){
+        display: block;
+    }
+}
+
+.hero-btn{
+    @include responsive (tablet){
+        margin-left: 33%;
+    }
+    @include responsive (mobile){
+        margin-left: 32%;
+    }
+    @include responsive (mobile2){
+        margin-left: 20%;
+    }
+}

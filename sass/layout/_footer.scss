@@ -1,0 +1,65 @@
+footer{
+    background-color: $tittle-color;
+}
+.footer-container {
+    display: flex;
+    padding-top: 4.9rem;
+    padding-bottom: 4.9rem;
+    @include responsive (tablet){
+        flex-direction: column;
+        row-gap: 1rem;
+        // margin-left: 35%;
+    }
+}
+.div-1 {
+    display: block;
+    margin-right: auto;
+    @include responsive (tablet){
+        margin-left: 35%;
+    }
+}
+.social {
+display: flex;
+align-items: center;
+margin-top: 5.7rem;
+&__item{
+&:not(:last-child){
+    margin-right: 1.3rem;
+    }
+    &__item__img:hover{
+    color: #30C88F;
+    }
+}
+}
+.div-2 {
+    margin-right: 10rem;
+    @include responsive (tablet){
+        margin-left: 35%;
+    }
+}
+.pages {
+    &__item{
+    @include font ( $font-weight, $text-normal-size, $text-normal-line);
+    &:not(:last-child){
+        margin-bottom: 0.8rem;
+    }
+    }
+}
+.pages__item__link {
+    color: $text-color;
+    &:hover{
+        color: #30C88F;
+    }
+}
+.div-3 {
+    margin-right: auto;
+}
+.div-4{
+    @include responsive (tablet){
+        margin-left: 35%;
+    }
+}
+.div-4-text {
+color: $text-color;
+margin-top: 3.2rem;
+}

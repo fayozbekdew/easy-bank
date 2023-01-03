@@ -1,0 +1,28 @@
+
+.header {
+  @include center;
+  // justify-content:space-between;
+  height: 8rem;
+}
+.header__logo{
+  display: block;
+  margin-right: auto;
+}
+.header__list {
+display: flex;
+align-items: center;
+margin-right: auto;
+@include responsive (tablet){
+  display: none;
+}
+  &__item{
+    text-transform: capitalize;
+    &:not(:last-child){
+      margin-right: 3rem;
+    }
+  }
+}
+.header__list__item__link {
+  color: $text-color;
+  @include font(400, $text-easy-size, $text-easy-line);
+}
